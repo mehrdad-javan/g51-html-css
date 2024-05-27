@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Lecture Part 2</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div><h1>HTML CSS Basics Tutorial</h1></div>
+    <header><h1>HTML CSS Basics Tutorial</h1></header>
 
-    <div>
+    <nav>
       <a>Home</a>
       <a>Login</a>
       <a>Register</a>
       <a>Contact</a>
-    </div>
+    </nav>
 
-    <div>
-      <form>
+    <main class="container">
+      <form class="form-lable">
         <h3>Registration Form</h3>
         <hr />
         <label><b>First Name *</b></label>
@@ -56,31 +57,38 @@
       </form>
       <hr />
       <table border="1">
-        <tr>
-          <th>ID</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Mehrdad</td>
-          <td>Javan</td>
-          <td>
-            <button type="button">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Simon</td>
-          <td>Elbrink</td>
-          <td>
-            <button type="button">Delete</button>
-          </td>
-        </tr>
-      </table>
-    </div>
+        <thead>
+          <tr>
+            <th id="id-text">ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
 
-    <div>&copy; Lexicon 2024</div>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mehrdad</td>
+            <td>Javan</td>
+            <td>
+              <button type="button" class="delete-btn">Delete</button>
+              <button type="button" class="edit-btn">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Simon</td>
+            <td>Elbrink</td>
+            <td>
+              <button type="button" class="delete-btn">Delete</button>
+              <button type="button" class="edit-btn">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>&copy; Lexicon 2024</footer>
   </body>
 </html>

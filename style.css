@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(224, 224, 224);
+}
+
+header {
+  background-color: black;
+  color: white;
+
+  padding: 20px;
+
+  text-align: center;
+
+  font-size: 32px;
+}
+
+nav {
+  background-color: gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  color: rgb(39, 39, 39);
+}
+
+#id-text {
+  color: red;
+}
+
+.form-lable {
+  color: rgb(74, 74, 218);
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.edit-btn {
+  background-color: rgb(228, 156, 0);
+}
