@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Basics Tutorial</title>
+    <style>
+      /* Universal Selector */
+      /*
+        Explanation: Selects all elements on the page.
+        Use Case: Apply a default style to all elements.
+        */
+      * {
+        margin: 0;
+      }
+
+      /* Tag Selector */
+      /*
+        Explanation: Selects all elements of a specific type.
+        Use Case: Style all elements of a particular type, like all paragraphs or headers.
+        */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #eaf6ff;
+      }
+
+      header {
+        background-color: #1d1b1b;
+        color: #fff;
+
+        padding: 20px;
+
+        text-align: center;
+
+        font-size: 32px;
+      }
+
+      /* Tag Selector */
+      nav {
+        background-color: #7e7e7e;
+        padding: 10px;
+
+        text-align: center;
+      }
+
+      /* Tag Selector */
+      a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        /*Margins are used to create space around elements, outside of any defined borders.*/
+      }
+
+      /* Class Selector */
+      .container {
+        padding: 20px;
+        color: #333;
+      }
+    </style>
+
+    <link rel="stylesheet" href="ex-style.css" />
+    <link rel="stylesheet" href="form-style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>HTML CSS Basics Tutorial</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main class="container">
+      <form>
+        <h2 id="form-title">Registration Form</h2>
+        <p>Please fill out this form to register for the course.</p>
+        <hr />
+
+        <label for="fn"><b>First Name</b></label>
+        <input
+          type="text"
+          id="fn"
+          placeholder="Enter First Name"
+          name="firstName"
+          required
+        /><br />
+
+        <label for="ln"><b>Last Name</b></label>
+        <input
+          type="text"
+          id="ln"
+          placeholder="Enter Last Name"
+          name="lastName"
+          required
+        /><br />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          id="email"
+          placeholder="Enter Email"
+          name="email"
+          required
+        /><br />
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+          <option value="1">Java</option>
+          <option value="2">C#</option>
+          <option value="3">Python</option></select
+        ><br />
+
+        <label for="description">Subject</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="..."
+        ></textarea
+        ><br />
+
+        <hr />
+        <br />
+
+        <button type="submit" class="reg-btn">Register</button>
+      </form>
+
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th colspan="2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mehrdad</td>
+            <td>Javan</td>
+            <td>
+              <button class="edit-btn">Edit</button>
+            </td>
+            <td>
+              <button class="delete-btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Simon</td>
+            <td>Elbrink</td>
+            <td>
+              <button type="submit">Edit</button>
+            </td>
+            <td>
+              <button type="submit">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer
+      style="
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 30px;
+      "
+    >
+      Copyright &copy; 2023 Lexicon
+    </footer>
+  </body>
+</html>

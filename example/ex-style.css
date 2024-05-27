@@ -1,0 +1,50 @@
+/* Table Styles */
+table {
+  width: 100%; /* Sets the width of the table to 100% of its container */
+  border-collapse: collapse; /* Collapses the borders of the table cells */
+  margin-top: 20px; /* Adds margin at the top of the table */
+}
+
+/* Table Header (th) and Table Data (td) Styles */
+th,
+td {
+  border: 1px dashed #ddd; /* Adds a 1-pixel solid border with a light gray color around table header (th) and table data (td) cells */
+  padding: 10px; /* Adds padding inside th and td cells */
+  text-align: left; /* Aligns the text inside th and td cells to the left */
+}
+
+/* Table Header Styles */
+th {
+  background-color: #000000; /* Sets the background color of table headers to black */
+  color: #fff; /* Sets the text color of table headers to white */
+}
+
+/* Table Row (tr) Styles */
+tr {
+  background-color: #fcfcfcd0; /* Sets the background color of table rows to a light gray with some transparency */
+}
+
+/* Hover Effect on Table Row */
+tr:hover {
+  background-color: #dadadad0; /* Changes the background color with some transparency when hovering over a table row */
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  padding: 10px 15px; /* Adds padding on the top, bottom, left, and right of the button */
+  border: none; /* Removes the border of the button */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  color: white;
+}
+
+/* Edit Button Styles */
+.edit-btn {
+  background-color: #ebc314; /* Sets a specific background color for buttons with the class "edit-btn" */
+}
+
+/* Delete Button Styles */
+.delete-btn {
+  background-color: #e00909; /* Sets a specific background color for buttons with the class "delete-btn" */
+}
